@@ -8,7 +8,7 @@ namespace Problems
         {
             Console.WriteLine(prefix("what    ...  did you say?? "));//input string
         }
-        static string prefix(string input){
+        static public string prefix(string input){
             if(input == null){  //error prevention
                 return null;
             }
