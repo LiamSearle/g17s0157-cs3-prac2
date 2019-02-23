@@ -4,7 +4,7 @@ solution: MyStuff.sln
 
 os: linux
 
-mono: 5.18.0.240
+mono: 5.18.0
 
 script:
   -dotnet restore
