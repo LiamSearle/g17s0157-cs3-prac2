@@ -14,12 +14,19 @@ namespace Tests
         [Test]
         public void ReturnNULLIfGivenNULL()
         {
-            bool result = (Program.prefix(null)==null);
+            bool resultNUll = (Program.prefix(null)==null);
+            bool resultHello = (Program.prefix("hello")=="5,1:hello");
+            bool resultEmpty = (Program.prefix("")=="0,0:");
+            bool resultWhat = (Program.prefix("what    ...  did you say?? ")=="27,5:what    ...  did you say?? ");
 
             //Assert.Pass(result, "Returned null given null");
-            Assert.IsTrue(result, "Did not Return null given null");
+            Assert.IsTrue(resultNUll, "Did not Return null given null");
+            Assert.IsTrue(resultHello, "Did not Return null given null");
+            Assert.IsTrue(resultEmpty, "Did not Return null given null");
+            Assert.IsTrue(resultWhat, "Did not Return null given null");
+
         }
-        [Test]
+        /*[Test]
         public void TestHello()
         {
             bool result = (Program.prefix("hello")=="5,1:hello");
@@ -42,6 +49,6 @@ namespace Tests
 
             //Assert.Pass(result, "Returned null given null");
             Assert.IsTrue(result, "Did not Return correctly");
-        }
+        }*/
     }
 }
