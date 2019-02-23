@@ -2,11 +2,9 @@ language: csharp
 
 solution: MyStuff.sln
 
-mono: none
-
 os: linux
 
-dotnet: 2.2.104
+mono: 5.18.0.240
 
 script:
   -dotnet restore
