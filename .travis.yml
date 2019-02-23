@@ -8,6 +8,8 @@ os: linux
 
 dotnet: 2.2
 
+script:
+  -dotnet restore
 
 matrix:
   include:
